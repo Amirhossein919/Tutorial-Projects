@@ -1,0 +1,92 @@
+.Page {
+  background: transparent;
+  width: 420px;
+  color:white;
+  border-radius: 10px;
+  padding: 30px 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, .1);
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: rgb(0, 12, 78);
+}
+.Input-Box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.Input-Box input {
+  box-sizing: border-box;
+}
+.Input-Box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+.Input-Box input::placeholder {
+  color: white;
+}
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  font-size: 16px;
+}
+.Remember-Forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: -15px 0px 15px;
+  cursor: pointer;
+}
+.Remember-Forgot label input {
+  accent-color: white;
+  margin-right: 4px;
+}
+.Remember-Forgot a {
+  color: white;
+  text-decoration: none;
+}
+.Remember-Forgot a:hover {
+  text-decoration: underline;
+}
+button {
+  background-color: white;
+  color: #1a1a1a;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+  font-weight: bold;
+  transition: background-color 0.15s;
+}
+button:hover{
+  background-color: rgba(255, 255, 255, 0.829);
+}
+.Register-Link {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.Register-Link p a {
+  text-decoration: none;
+  color: rgb(0, 6, 41);
+  font-weight: bold;
+}
+.Register-Link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,87 @@
+:Root{
+  --clr-bg: #f5f5f5;
+  --clr-b: #ffffff;
+  --bclr-n: rgb(0, 124, 48);
+  --bclr-op: rgb(179, 21, 179);
+  --bclr-e: rgb(255, 0, 0);
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  --clr-C: rgb(61, 61, 61);
+}
+body{
+  background-color: var(--clr-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+button{
+  font: italic bold 30px Arial;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  margin-right: 20px;
+  transition: box-shadow 0.20s, margin 0.2s;
+}
+.Calculator{
+  background-color: var(--clr-b);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.Number{
+  color: var(--clr-b);
+  background-color: var(--bclr-n);
+  padding: 10px 18px;
+  box-shadow: 0px 0px 8px 4px rgb(2, 37, 16);
+  border-radius: 6px;
+  animation-name: number;
+  animation-duration: 60.0s;
+  animation-range: ease-in-out;
+}
+.Operator{
+  border-radius: 10px;
+  color: var(--clr-b);
+  background-color: var(--bclr-op);
+  padding: 10px 30px;
+  box-shadow: 0px 0px 8px 4px rgb(71, 0, 71);
+}
+.Equals{
+  padding: 10px 56px;
+  color: var(--clr-b);
+  background-color: var(--bclr-e);
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px 0px 8px 4px rgb(134, 0, 0);
+}
+.Clear{
+  color: var(--clr-b);
+  background-color: var(--clr-C);
+  padding: 10px 135px;
+  font-style: normal;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 4px rgb(141, 140, 140);
+}
+.Operator:active, .Equals:active, .Number:active, .Clear:active{
+  transform: scale(0.95);
+  box-shadow: none;
+}
+.btn-row{
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+#Result{
+  margin-bottom: 30px;
+  color: #333;
+  font: normal bold 40px Arial;
+  min-height: 40px;
+}
+
+@keyframes number{
+  from{
+    background-color: rgb(0, 124, 48);
+  }
+  to{
+    background-color: rgb(0, 174, 255);
+  }
+}

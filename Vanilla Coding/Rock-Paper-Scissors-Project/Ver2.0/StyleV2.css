@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font: bold 1.4em Arial;
+  text-shadow: 0px 0px 3px grey;
+}
+.Player {
+  color: green;
+  font-family: 'Comic Sans MS';
+  text-shadow: 1px 1px 1px rgb(0, 80, 0);
+}
+.Computer {
+  color: red;
+  font-family: 'Comic Sans MS';
+  text-shadow: 1px 1px 1px rgb(173, 0, 0);
+}
+.result {
+  color: rgb(173, 124, 0);
+  text-shadow: 2px 2px 5px rgb(114, 82, 0);
+  font-family: 'Comic Sans MS';
+}
+button {
+  font: normal 1.5em 'Comic Sans MS';
+  cursor: pointer;
+  color: white;
+  background-color: rgb(0, 119, 255);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 5px;
+  box-shadow: 0px 0px 5px 2px black;
+  transition: box-shadow 0.15s, transform 0.1s;
+}
+button:active {
+  box-shadow: none;
+  transform: scale(0.95);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coin Flip</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <p id="Score">Score:</p>
+        <p id="Guess">You Guessed:</p>
+        <p id="Coin">Can You Guess?</p>
+        <p id="Result">Result</p>
+      </div>
+      <div>
+        <button type="button" onclick="Guess = 'Heads',ShowGuess()">Heads</button>
+        <button type="button" onclick="Guess = 'Tails',ShowGuess()">Tails</button>
+        <button type="button" onclick="Flip()">Flip Coin</button>
+      </div>
+      <hr>
+      <div>
+        <button type="button" onclick="Result()">Result</button>
+        <button type="button" onclick="ResetScore()">Reset</button>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>

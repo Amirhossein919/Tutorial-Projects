@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Style.css" type="text/css">
+  </head>
+  <body>
+    <div class="Calculator">
+      <p id="Result"></p>
+      <div class="btn-row">
+        <button class="Clear" onclick="Calculation = '', TheCalculation();">CE</button>
+      </div>
+      <div class="btn-row">
+        <button type="button" class="Number" onclick="withCalculation(7), TheCalculation();">7</button>
+        <button type="button" class="Number" onclick="withCalculation(8), TheCalculation();">8</button>
+        <button type="button" class="Number" onclick="withCalculation(9), TheCalculation();">9</button>
+        <button type="button" class="Operator" onclick="Operations(' * '), TheCalculation();">&times;</button>
+      </div>
+      <div class="btn-row">
+        <button type="button" class="Number" onclick="withCalculation(4), TheCalculation();">4</button>
+        <button type="button" class="Number" onclick="withCalculation(5), TheCalculation();">5</button>
+        <button type="button" class="Number" onclick="withCalculation(6), TheCalculation();">6</button>
+        <button type="button" class="Operator" onclick="Operations(' / '), TheCalculation();">&divide;</button>
+      </div>
+      <div class="btn-row">
+        <button type="button" class="Number" onclick="withCalculation(1), TheCalculation();">1</button>
+        <button type="button" class="Number" onclick="withCalculation(2), TheCalculation();">2</button>
+        <button type="button" class="Number" onclick="withCalculation(3), TheCalculation();">3</button>
+        <button type="button" class="Operator" onclick="Operations(' + '), TheCalculation();">&plus;</button>
+      </div>
+      <div class="btn-row">
+        <button type="button" class="Equals" onclick="evaluateCalculation(), TheCalculation();">&equals;</button>
+        <button type="button" class="Number" onclick="withCalculation(0), TheCalculation();">0</button>
+        <button type="button" class="Operator" onclick="Operations(' - '), TheCalculation();">&minus;</button>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>

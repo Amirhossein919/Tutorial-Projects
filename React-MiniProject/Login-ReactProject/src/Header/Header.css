@@ -1,0 +1,75 @@
+header {
+  padding: 30px;
+  background-color: rgb(1, 22, 39);
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.SearchBar {
+  border: none;
+  outline: none;
+  width: 500px;
+  height: 40px;
+  border-radius: 200px;
+  position: relative;
+  padding: 14px;
+  font-size: 20px;
+}
+.SearchBar ::placeholder{
+  color: white;
+}
+
+.Sidebar {
+  width: 200px;
+  background-color: rgb(1, 22, 39);
+  position: absolute;
+  height: 95vh;
+  padding: 0 30px;
+  left: -100%;
+  transition: ease 0.3s;
+}
+
+.Sidebar.active {
+  left: 0;
+}
+
+.logo {
+  width: 60px;
+}
+
+.Ul{
+  padding: 0;
+}
+
+.Ul-Li {
+  list-style-type: none;
+  margin: 10px 0px;
+}
+
+.Ul-Li a {
+  text-decoration: none;
+  color: rgb(234, 236, 239);
+  font-size: 16px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.Ul-Li a:hover , .Ul-Li a:active {
+  background-color: rgb(23, 43, 77);
+}
+header svg {
+  font-size: 40px;
+}
+
+.Main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}

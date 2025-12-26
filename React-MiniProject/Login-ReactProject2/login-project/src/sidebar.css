@@ -1,0 +1,54 @@
+.SideBar {
+    position: absolute;
+    min-width: 17%;
+}
+
+.UL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    border: 1px solid black;
+    max-width: 200px;
+    padding: 10px 10px;
+    display: flex;
+    margin: 10px 10px;
+    background-color: rgba(100, 40, 100, 1);
+    font-size: 20px;
+    transition: 0.25s ease;
+}
+
+.list:hover {
+    background-color: rgba(80, 40, 100, 1);
+    transition: 0.25s ease;
+}
+
+.sublist {
+    min-width: 210px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 10px);
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.sublist.visible {
+    max-height: 200px;
+}
+
+.sublist li {
+    background-color: rgba(120, 60, 120, 1);
+    margin: 10px 0;
+    font-size: 20px;
+    border: 1px solid black;
+    transition: 0.25s ease;
+}
+
+.sublist li:hover {
+    background-color: rgba(100, 40, 100, 1);
+}

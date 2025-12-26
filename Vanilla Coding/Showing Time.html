@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Show Time</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      :root{
+        --clr-t: rgb(124, 0, 0);
+        --clr-b: rgb(0, 0, 0);
+        --clr-back: rgb(200, 113, 0);
+        --shadow-t: 1px 1px 0px rgb(0, 0, 0);
+        --shadow-b: 0px 0px 5px 0px rgb(200, 113, 0);
+      }
+      body {
+        display: flex;
+        flex-direction: column;         /* stack items vertically */
+        align-items: center;            /* center horizontally */
+        justify-content: center;        /* center vertically */
+        height: 100vh;                  /* full viewport height */
+        margin: 0;                      /* remove default body margin */
+      }
+      #Time{
+        align-items: center;
+        justify-content: center;        
+        font-size: 30px;
+        font-family: 'Comic Sans MS';
+        font-weight: bold;
+        color: var(--clr-t);
+        text-shadow: var(--shadow-t);
+      }
+      #Button{
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 8px 12px;
+        font-size: 20px;
+        font-family: 'Comic Sans MS';
+        font-weight: bold;
+        color: var(--clr-b);
+        background-color: var(--clr-back);
+        box-shadow: var(--shadow-b);
+        outline: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="Time">The Time is:</p>
+    <button type="button" id="Button" onclick="ShowTime();">Show Time</button>
+    <script>
+      ShowTime = () => {
+        let Time = new Date().toLocaleTimeString('en-US', {hour12: false});
+
+        document.getElementById('Time').innerHTML = Time;
+        if(Time >= 6 && Time <= 12){
+          console.log('Good Morning');
+        }
+        else if(Time >= 13 && Time <= 17){
+          console.log('Good Afternoon');
+        }
+        else if(Time >= 18 && Time <= 20){
+          console.log('Good Evening');
+        }
+        else {
+          console.log('Good Night');
+        }
+      }
+    </script>
+  </body>
+</html>
